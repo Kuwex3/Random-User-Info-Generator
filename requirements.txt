@@ -3,3 +3,5 @@ uvicorn
 pydantic
 pydantic-settings
 requests
+simple-term-menu
+sys

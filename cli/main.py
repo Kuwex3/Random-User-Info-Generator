@@ -1,13 +1,18 @@
-import requests
-from cli.config import Data
+from simple_term_menu import TerminalMenu
+import sys
 
-data = Data()
+from cli.fetch_data import fetch_info
 
-headers = {"X-Api-Key": data.API_KEY}
+options = ["Get Random User Info", "Exit"]
 
-r = requests.get(url=data.URL, headers=headers)
+menu = TerminalMenu(options, title="Random User Info Generator")
+while True:
+    menu.show()
 
-print(
-    f"Username: {r.json()[0]["username"]}\nPassword: {r.json()[0]["password"]}\nEmail: {r.json()[0]["email"]}\n\
-First Name: {r.json()[0]["first_name"]}\nLast Name: {r.json()[0]["last_name"]}\nFull Name: {r.json()[0]["full_name"]}"
-    )
+    if menu.chosen_menu_index == 0:
+        print("====================")
+        print(fetch_info())
+        print("====================")
+    else:
+        print("GoodBye!")
+        sys.exit()
