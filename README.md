@@ -4,8 +4,13 @@
 > pip install -r requirements.txt
 
 ## Starting
+### Server:
 ``` Bash
 uvicorn backend.main:app --reload
+```
+### Cli:
+``` Bash
+python -m cli.main
 ```
 
 ## User Guide
