@@ -5,7 +5,7 @@
 
 ## Starting
 ``` Bash
-uvicorn main:app --reload
+uvicorn backend.main:app --reload
 ```
 
 ## User Guide

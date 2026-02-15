@@ -1,4 +1,4 @@
-from middlewares.APIdata import Settings
+from backend.middlewares.APIdata import Settings
 import requests
 
 data = Settings()
