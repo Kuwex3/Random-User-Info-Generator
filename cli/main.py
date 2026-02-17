@@ -3,7 +3,7 @@ import sys
 
 from cli.fetch_data import fetch_info
 
-menu_options = ["Get Random User Info", "Exit"]
+menu_options = ["[1]Get Random User Info", "[0]Exit"]
 
 menu = TerminalMenu(menu_options, title="Random User Info Generator")
 while True:
