@@ -7,4 +7,4 @@ app.include_router(router=get_info_router)
 
 @app.get("/")
 async def main_page():
-    return "Hello, World!"
+    return {"Hello, World!"}
