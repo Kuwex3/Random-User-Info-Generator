@@ -14,5 +14,5 @@ while True:
         print(fetch_info())
         print("====================")
     else:
-        print("GoodBye!")
+        print("Goodbye!")
         sys.exit()
